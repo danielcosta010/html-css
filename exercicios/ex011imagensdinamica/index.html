@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="android-chrome-192x192.png" type="image/x-icon">
+    <title>Midias em HTML5</title>
+    
+    
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Esta página possui imagem dinamica que se adapta a seu navegador</p>
+    <picture>
+        <source media="(max-width: 500px )" srcset="imagens/pexels-263.jpeg" type="image/jpeg">
+        <source media="(max-width: 800px )" srcset="imagens/pexels-450.jpeg" type="image/jpeg">
+        <img src="imagens/pexels-750.jpeg" alt="Imagem mar por do sol">
+    </picture> 
+<!--media max-width é o limite maximo que abre a imagem na janela, quando a janela atinge este valor pula para proxima imagem. Escolha a tag source type-->
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir audio em HTML5</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="Audio/God of wondersMP3.mp3" type="audio/mpeg">
+        <source src="Audio/God of wondersOgg.ogg" type="audio/ogg">
+        <source src="Audio/God of wondersWAV.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir o audio. <a href="Audio/God of wondersMP3.mp3" download="God of wondersMP3.mp3" type="application/mp3">Clique aqui para baixar</a></p>
+    </audio>
+<!--Em audio use preload (melhor metadata), autoplay e controls. Escolha source src-->
+
+    <h1>Reproduzindo Vídeos</h1>
+    <p>Reproduzindo videos em hospedagem própria <br> Arquivos individuais</p>
+    <video src="Video/NeveWEBM.webm" width="600" height="500" poster="Video/pexels-victoria300.jpg" autoplay controls></video>
+    <video src="Video/Neve.mp4" width="600" height="500" controls></video>  
+    <video src="Video/NeveMKV.mkv" width="600" height="500" controls></video>
+
+    <p>Arquivos de videos dinâmicos</p>
+    <video controls poster="Video/capa500.jpg" width="600" height="500">
+        <source src="Video/Neve.mp4" type="video/mp4">
+        <source src="Video/NeveWEBM.webm" type="video/webm">
+        <source src="Video/NeveMKV.mkv" type="video/mkv">
+    </video>
+    <!--No chrome AVI e Mpeg não abriu-->  
+
+    <h1>Incorporação de videos externos</h1>
+    <p>Videos do youtube</p>
+    <iframe width="600" height="500" src="https://www.youtube.com/embed/dBVJbuJCHic" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <iframe width="600" height="500" src="https://www.youtube.com/embed/D4d1z0FH-KM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h1>Inserindo videos do Vimeo</h1>
+
+    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/502690654?h=d477e5e3c9&byline=0&portrait=0" style="position:absolute;top:0;left:0; width: 600px;height:500px;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+</body>
+</html>
