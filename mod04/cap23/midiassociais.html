@@ -6,101 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Midias Sociais</title>
     <script src="https://kit.fontawesome.com/a13f95c19e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-        body, html {
-            background-image: url(imagens/fundo-madeira.jpg);
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
-            scroll-behavior: smooth;
-        }
-        .container {
-            position: relative;
-            width: 100%;
-            height: 800px;
-            
-        }
-        article {
-            position: absolute;
-            left:50%;
-		    top:50%;
-		    margin-left:-190px;
-		    margin-top:-325px;
-        }
-        iframe {
-            width: 273px;
-            height: 600px;
-            border-radius: 25px;
-            margin-left: 25px;
-            margin-top: 21px;
-            border: none; 
-        }
-        #frame-tela::-webkit-scrollbar {
-            display: none;
-        }
-        nav a img{
-            position: absolute;
-            top: 50px ;
-            right: 30px;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            transition: 0.5s ease-in-out;
-        }
-        nav a img:hover {
-            transform: translateX(-5px);
-            box-shadow: 2px 3px 4px blanchedalmond;
-        }
-        .linkedin {
-            top: 140px;
-        }
-        .github {
-            top: 230px;
-        }
-        .twiter {
-            top: 320px;
-        }
-
         
-        .gotop {
-            position: fixed;
-            background: rgb(22, 22, 151);
-            width: 30px;
-            height: 30px;
-            border-radius: 10px;
-            bottom: 10px;
-            right: 10px;
-            
-        }
-        i {
-            position: absolute;
-            color: white;
-            top: 7px;
-            left: 8px;
-        }
     </style>
 </head>
 <body>
-    <header id="header">
-        <div class="container">
-            <article><img src="imagens/Smartphone1.png" alt=""></article>
-            <article><iframe src="imagens/tela1.png" name="tela" frameborder="0" scrolling="no"></iframe></article>
-        </div>
+    <main>
+        <section class="telefone">
+
+            <iframe src="home.html" name="tela" frameborder="0">Seu navegador não é compatível com isso.</iframe>
+            
+        </section>
         
-        <nav>
-            <a href="https://www.cursoemvideo.com" target="tela"><img src="imagens/insta.png" alt=""></a>
-            <a href="imagens/tela-youtube.png" target="tela"><img src="imagens/linkedin.png" alt="" class="linkedin"></a>
-            <a href="https://danielcosta010.github.io/siteanimado/svg" target="tela"><img src="imagens/github.png" alt="" class="github"></a>
-            <a href="https://www.twitter.com.br" target="tela"><img src="imagens/twiter.png" alt="" class="twiter"></a>
-        </nav>
-    </header>
+        <section class="menu">
+            <a href=""><img src="imagens/logo-home.jpg" alt=""></a>
+            <a href=""><img src="imagens/logo-facebook.jpg" alt=""></a>
+            <a href=""><img src="imagens/logo-github.jpg" alt=""></a>
+            <a href=""><img src="imagens/logo-instagram.jpg" alt=""></a>
+            <a href=""><img src="imagens/logo-youtube.jpg" alt=""></a>
+            <a href=""><img src="imagens/logo-twitter.jpg" alt=""></a>
+        </section>
+    </main>
     
-    <a href="#header">
+    <!-- <a href="#header">
         <div class="gotop"><i class="fa-solid fa-chevron-up"></i></div>
-    </a>
+    </a> -->
     
 </body>
 </html>
