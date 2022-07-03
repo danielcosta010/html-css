@@ -32,13 +32,13 @@ section iframe {
   position: absolute;
   left: 22px;
   top: 22px;
-  width: 273px;
   height: 588px;
   border-radius: 27px;
   width: 280px;
-  height: 593px;
+  height: 594px;
   border-radius: 27px;
 }
+
 
 section.menu {
   position: absolute;
