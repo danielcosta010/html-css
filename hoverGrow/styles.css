@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  height: 20rem;
+  gap: 1rem;
+}
+.container > div {
+  flex: 1;
+  border-radius: 1rem; 
+  background-color: rgb(56, 50, 50);
+  transition: all .8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.container div:hover {
+  flex: 3;
+}
+
+section {
+  display: flex;
+  margin-top: 5rem;
+  width: 100%;
+  height: 430px
+}
+section img {
+  width: 0;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: .8;
+  transition: .5s ease;
+}
+
+section img:hover {
+  cursor: crosshair;
+  width: 300px;
+  opacity: 1;
+  filter: contrast(120%);
+}

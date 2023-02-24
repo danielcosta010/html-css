@@ -22,6 +22,6 @@ body {
   cursor: pointer;
 }
 .container:hover > :not(:hover) {
-  opacity: .4;
+  opacity: .5;
   transform: scale(0.9);
 }

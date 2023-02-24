@@ -1,0 +1,32 @@
+body {
+  background-color: rgb(47, 43, 43);
+}
+ul {
+  display: flex;
+  list-style: none;
+  gap: 24px;
+}
+li {
+  position: relative;
+  display: inline-block;
+  color: antiquewhite;
+  cursor: pointer;
+  font-size: 36px;
+}
+li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: #968989;
+  border-radius: 4px;
+  scale: 0 1;
+  transform-origin: left;
+  transition: scale .35s;
+}
+
+li:hover::before {
+  scale: 1;
+}
